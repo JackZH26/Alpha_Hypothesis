@@ -42,9 +42,9 @@ docs/
   Frontiers_Contribution_To_The_Field_2026-04-29.md
 ```
 
-## Reproduce the quadratic-field pilot screen
+## Reproduce the quadratic-field negative-control screen
 
-The pilot look-elsewhere screen is dependency-free and uses Python's standard
+The pilot negative-control screen is dependency-free and uses Python's standard
 library.
 
 ```bash
@@ -57,7 +57,15 @@ The script compares the leading arithmetic scale
 A_d = (3! / zeta_{Q(sqrt(d))}(-3)) * epsilon_K^(-2)
 ```
 
-over small squarefree real quadratic fields. This is a diagnostic screen only;
+and the same fixed three-term rule
+
+```text
+B_d = A_d - w_K * epsilon_K^(-3)
+      + (Tr_{K/Q}(epsilon_K^2) * epsilon_K)^(-Delta_K)
+```
+
+over small squarefree real quadratic fields, reporting residuals against the
+CODATA 2022 central value for alpha(0)^(-1). This is a diagnostic screen only;
 it is not a full statistical proof of the manuscript hypothesis.
 
 ## Data policy
@@ -73,4 +81,3 @@ Code is released under the MIT License. Metadata and generated CSV outputs are
 released under CC BY 4.0 where the author has rights to do so. Third-party
 paper metadata, experiment names, and bibliographic facts remain subject to
 their original sources.
-
