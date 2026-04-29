@@ -1,0 +1,4 @@
+tag,description,url,filename,status,local_path
+PDG_2024_ee_R_ratio_data,PDG/COMPAS e+e- R-ratio data file and post-2017 update notes,https://pdg.lbl.gov/2024/hadronic-xsections/rpp2022-hadronicrpp_page1001.dat,PDG_2024_ee_R_ratio_rpp2022_hadronicrpp_page1001.dat,downloaded,post2011/direct_data/PDG_2024_ee_R_ratio_rpp2022_hadronicrpp_page1001.dat
+PDG_2024_sigma_R_ee_pdf,PDG e+e- sigma/R plot PDF,https://pdg.lbl.gov/2024/hadronic-xsections/rpp2022-sigma_R_ee.pdf,PDG_2024_sigma_R_ee.pdf,downloaded,post2011/direct_data/PDG_2024_sigma_R_ee.pdf
+PDG_2024_R_udscb_pdf,PDG light-flavour/charm/beauty threshold R-ratio PDF,https://pdg.lbl.gov/2024/hadronic-xsections/rpp2022-R_udscb.pdf,PDG_2024_R_udscb.pdf,downloaded,post2011/direct_data/PDG_2024_R_udscb.pdf

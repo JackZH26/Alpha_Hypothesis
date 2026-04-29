@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: Alpha Bost-Connes Data and Scripts
+message: If you use these materials, please cite this repository and the associated manuscript.
+type: dataset
+authors:
+  - family-names: Zhou
+    given-names: Jian
+    orcid: https://orcid.org/0009-0000-3536-9500
+    affiliation: JZ Institute of Science
+year: 2026
+repository-code: https://github.com/JackZH26/alpha-bost-connes-data-scripts
+abstract: Reproducibility scripts, processed outputs, and source inventories for a Bost-Connes arithmetic hypothesis for the fine-structure constant over Q(sqrt(5)).
+license: MIT
+keywords:
+  - fine-structure constant
+  - Bost-Connes system
+  - Dedekind zeta function
+  - mathematical physics
+  - reproducibility
+

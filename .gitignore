@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Keep large or copyrighted raw source material out of this public repository.
+raw_papers/
+arxiv_source/
+arxiv_pdf/
+hepdata_extracted/
+*.pdf
+*.tar
+*.tar.gz
+*.zip
+

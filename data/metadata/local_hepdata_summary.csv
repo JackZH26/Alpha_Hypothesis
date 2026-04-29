@@ -1,0 +1,17 @@
+inspire_id,local_tags,csv_table_count,first_csv_file
+1392011,SND_2006_KSKL_JETP103_720,1,hepdata_extracted/SND_2006_KSKL_JETP103_720/csv/HEPData-ins1392011-v1-csv/Table1.csv
+1809286,SND_2006_pipi_JETP103_380,3,hepdata_extracted/SND_2006_pipi_JETP103_380/csv/HEPData-ins1809286-v1-csv/Table1.csv
+531667,CMD2_2004_pipi_B578_285,1,hepdata_extracted/CMD2_2004_pipi_B578_285/csv/HEPData-ins531667-v1-csv/Table1.csv
+552899,BNL_E821_2006_gminus2_D73_072003,1,hepdata_extracted/BNL_E821_2006_gminus2_D73_072003/csv/HEPData-ins552899-v1-csv/Table1.csv
+709730,BaBar_2005_3pi_D71_052001;BaBar_2006_4pi5pi_D73_052003;BaBar_2009_pipi_PRL103_231801,9,hepdata_extracted/BaBar_2005_3pi_D71_052001/csv/HEPData-ins709730-v1-csv/Table1.csv
+728302,CMD2_2007_pipi_B648_28,2,hepdata_extracted/CMD2_2007_pipi_B648_28/csv/HEPData-ins728302-v1-csv/Table1.csv
+734590,CMD2_2007_3pi_B642_203,1,hepdata_extracted/CMD2_2007_3pi_B642_203/csv/HEPData-ins734590-v1-csv/Table1.csv
+747875,BaBar_2007_KKpipi_D76_092005,7,hepdata_extracted/BaBar_2007_KKpipi_D76_092005/csv/HEPData-ins747875-v1-csv/Table1.csv
+753556,CLEO_2007_R_D76_072008,1,hepdata_extracted/CLEO_2007_R_D76_072008/csv/HEPData-ins753556-v1-csv/Table1.csv
+755881,SND_2007_KK_D76_072012,1,hepdata_extracted/SND_2007_KK_D76_072012/csv/HEPData-ins755881-v1-csv/Table1.csv
+765258,BaBar_2008_KKpi_D77_092002;BaBar_2011_KKpi0_1103_3001,18,hepdata_extracted/BaBar_2008_KKpi_D77_092002/csv/HEPData-ins765258-v1-csv/Table1.csv
+782516,CMD2_2008_KK_B669_217,2,hepdata_extracted/CMD2_2008_KK_B669_217/csv/HEPData-ins782516-v1-csv/Table1.csv
+791841,KLOE_2008_omega_pi0_B669_223,2,hepdata_extracted/KLOE_2008_omega_pi0_B669_223/csv/HEPData-ins791841-v1-csv/Table1.csv
+797438,KLOE_2009_pipi_gamma_B670_285,3,hepdata_extracted/KLOE_2009_pipi_gamma_B670_285/csv/HEPData-ins797438-v1-csv/Table1.csv
+814778,BES_2006_R_PRL97_262001;BES_2009_R_PLB677_239,2,hepdata_extracted/BES_2006_R_PRL97_262001/csv/HEPData-ins814778-v1-csv/Table1.csv
+859660,KLOE_2011_pipi_gamma_B700_102,15,"hepdata_extracted/KLOE_2011_pipi_gamma_B700_102/csv/HEPData-ins859660-v1-csv/Barecross-section,inverseofstatisticalcovariance.csv"
