@@ -21,9 +21,12 @@ manifests.
 ```text
 scripts/
   frontiers_quadratic_field_screen.py
+  frontiers_grammar_audit.py
 
 data/processed/
   frontiers_quadratic_field_screen.csv
+  frontiers_grammar_audit_summary.csv
+  frontiers_grammar_audit_top20.csv
 
 data/metadata/
   post2011_source_inventory.csv
@@ -36,6 +39,7 @@ data/metadata/
 
 figures/
   alpha_inverse_residuals.png
+  alpha_inverse_residuals_300dpi.jpg
   pdg_compas_r_ratio_landscape.png
 
 docs/
@@ -44,8 +48,9 @@ docs/
 
 ## Reproduce the quadratic-field negative-control screen
 
-The pilot negative-control screen is dependency-free and uses Python's standard
-library.
+The negative-control screen is dependency-free and uses Python's standard
+library. By default it evaluates squarefree real quadratic fields through
+`d <= 120`.
 
 ```bash
 python3 scripts/frontiers_quadratic_field_screen.py > data/processed/frontiers_quadratic_field_screen.csv
@@ -67,6 +72,22 @@ B_d = A_d - w_K * epsilon_K^(-3)
 over small squarefree real quadratic fields, reporting residuals against the
 CODATA 2022 central value for alpha(0)^(-1). This is a diagnostic screen only;
 it is not a full statistical proof of the manuscript hypothesis.
+
+## Reproduce the finite grammar audit
+
+The grammar audit enumerates a bounded expression space and records the closest
+expressions to the CODATA 2022 central value.
+
+```bash
+python3 scripts/frontiers_grammar_audit.py \
+  --summary-out data/processed/frontiers_grammar_audit_summary.csv \
+  --top-out data/processed/frontiers_grammar_audit_top20.csv
+```
+
+The default audit uses squarefree `d <= 120`, exponent range `1..8`, torsion
+coefficients from `-3` to `3`, and local signs `-1, 0, +1`. It also reports a
+fixed-seed Monte Carlo sample from the same finite grammar. These fractions are
+descriptive diagnostics, not formal p-values.
 
 ## Data policy
 

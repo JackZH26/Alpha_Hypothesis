@@ -8,6 +8,8 @@ in the manuscript's look-elsewhere discussion.
 
 from __future__ import annotations
 
+import argparse
+import sys
 from decimal import Decimal, getcontext
 from fractions import Fraction
 from math import isqrt
@@ -109,18 +111,42 @@ def trace_epsilon_squared(d: int, a: int, b: int, denom: int) -> Fraction:
     return Fraction(2 * (a * a + d * b * b), 1)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Screen real quadratic fields against the alpha inverse target."
+    )
+    parser.add_argument(
+        "--max-d",
+        type=int,
+        default=120,
+        help="largest squarefree d to include; default: 120",
+    )
+    parser.add_argument(
+        "--unit-search-limit",
+        type=int,
+        default=500000,
+        help="search limit for the Pell-type fundamental unit scan",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     # CODATA 2022 adjusted central value for alpha(0)^(-1), used as the
     # empirical target in the field-level negative-control screen.
     target = Decimal("137.035999177")
     print(
-        "d,D,epsilon,trace_epsilon_squared,L(-3,chi_D),"
+        "d,D,epsilon,trace_epsilon_squared,L_minus_3_chi_D,"
         "3!/zeta_K(-3),leading_scale,leading_residual,"
         "uniform_three_term,uniform_residual"
     )
-    for d in [n for n in range(2, 31) if is_squarefree(n)]:
+    for d in [n for n in range(2, args.max_d + 1) if is_squarefree(n)]:
         D = fundamental_discriminant(d)
-        eps, a, b, denom = fundamental_unit_data(d)
+        try:
+            eps, a, b, denom = fundamental_unit_data(d, limit=args.unit_search_limit)
+        except RuntimeError as exc:
+            print(f"skipping {exc}", file=sys.stderr)
+            continue
         trace_eps2 = trace_epsilon_squared(d, a, b, denom)
         Lm3 = L_minus_3_for_quadratic_discriminant(D)
         if Lm3 == 0:
